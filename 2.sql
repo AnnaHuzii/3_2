@@ -11,6 +11,5 @@ WHERE id IN (
         INNER JOIN developers ON PD.developer_id=developers .id
         GROUP BY project_id
         ORDER BY costs DESC
-        LIMIT 1
     )
 );
